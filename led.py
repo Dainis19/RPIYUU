@@ -4,7 +4,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(Felse)
 GPIO.setup(18,GPIO.OUT)
 counter = 0
-try
+try:
     while counter < 30:
         print("LED 1 on")
         GPIO.output(18,GPIO.HIGH)
