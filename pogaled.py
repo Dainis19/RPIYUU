@@ -17,13 +17,16 @@ try:
         button_state2 = GPIO.input(19)
         button_state3 = GPIO.input(26)
         if button_state1 == GPIO.LOW:
-           button_state2 == GPIO.LOW
-           button_state3 == GPIO.LOW
-        print ('LED 1 on')
-        GPIO.output(16,GPIO.HIGH)
-        GPIO.output(20,GPIO.HIGH)
-        GPIO.output(21,GPIO.HIGH)
-        time.sleep(1)
-        print ('Led off')
+         GPIO.output(16,GPIO.HIGH)
+         print ('Led off')
+         time.sleep(1)
+           button_state2 == GPIO.LOW:
+         GPIO.output(16,GPIO.HIGH)
+         print ('Led off2')
+         time.sleep(1)
+           button_state3 == GPIO.LOW:
+         GPIO.output(16,GPIO.HIGH)
+         print ('Led off3')
+         time.sleep(1)
 except:
     GPIO.cleanup()
