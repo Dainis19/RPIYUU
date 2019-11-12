@@ -26,6 +26,7 @@ try:
         time.sleep(1)
         print ('Led off')
 
-            
+            except:
+                GPIO.cleanup()
        
   
