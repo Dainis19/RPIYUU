@@ -5,7 +5,7 @@ GPIO.setwarnings(False)
 
 button = 4
 
-GPIO.setup(button, GPIO.IN, GPIO.PUD.UP)
+GPIO.setup(button, GPIO.IN, GPIO.PUD_UP)
 
 while True:
     button_state = GPIO.input(button)
