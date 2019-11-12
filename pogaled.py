@@ -20,11 +20,11 @@ try:
          GPIO.output(16,GPIO.HIGH)
          print ('Led off')
          time.sleep(1)
-           button_state2 == GPIO.LOW:
+        if button_state2 == GPIO.LOW:
          GPIO.output(16,GPIO.HIGH)
          print ('Led off2')
          time.sleep(1)
-           button_state3 == GPIO.LOW:
+        if button_state3 == GPIO.LOW:
          GPIO.output(16,GPIO.HIGH)
          print ('Led off3')
          time.sleep(1)
